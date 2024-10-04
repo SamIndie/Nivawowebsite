@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-size: cover;
+    background-image: url('../img/backgroundacc.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed
+        /*static	Default value. Elements render in order, as they appear in the document flow	
+    absolute	The element is positioned relative to its first positioned (not static) ancestor element	
+    fixed	The element is positioned relative to the browser window	
+    relative	The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position	
+    sticky	The element is positioned based on the user's scroll position
+    A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).*/
+}
+
+header {
+    background-color: rgba(214, 229, 246, 0.902);
+    padding: 0.5em;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+a {
+    color: rgb(115, 14, 14);
+    text-decoration: none;
+    position: relative;
+    transition: 0.4s ease-in-out;
+
+}
+
+nav a:hover {
+    color: midnightblue;
+    background-color: rgb(244, 195, 145, 0.7);
+    padding: 0.5em 0.75em 0.5em 0.75em;
+    border-radius: 2em;
+    transition: 0.3s ease-in-out;
+
+
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3em;
+    text-align: center;
+    color: midnightblue;
+    background-color: rgb(244, 195, 145, 0.5);
+    padding: 1em;
+    margin: 0.5em;
+    border-radius: 1em;
+
+}
+
+footer {
+    color: rgb(115, 14, 14);
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    position: relative;
+
+}
+
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 2em;
+}
+
+video {
+    height: 50em;
+    width: auto;
+    padding: 0 50em;
+
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+/* index.html*/
+
+
+
+h1 {
+    padding: 0.5em;
+    font-size: 5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(115, 14, 14)
+}
+
+h2 {
+    padding: 0.5em;
+    font-size: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: darkblue;
+}
+
+
+.lobi {
+    font-size: 2.5em;
+    background-color: transparent;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+
+
+}
+
+.gallery a:hover {
+    color: midnightblue;
+    background-color: rgba(214, 229, 246, 0.902);
+    padding: 3em;
+    border-radius: 10em;
+    transition: 0.3s ease-in-out;
+
+}
+
+
+
+
+/* art*/
+
+
+div {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5em;
+}
+
+.decor1 {
+    position: sticky;
+    float: right;
+    animation: rotation 3s linear infinite;
+}
+
+.decor2 {
+    position: absolute;
+    margin-left: 6em;
+    animation: rotation 3s linear infinite;
+}
+
+
+@keyframes rotation {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    25% {
+        -webkit-transform: rotate(4deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    75% {
+        -webkit-transform: rotate(-5deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+
+
+
+/* Photography*/
+
+
+ 
+section p {
+    font-size: 2.5em;
+    text-align: left;
+    width: auto;
+
+}
+
+
+section:first-of-type img {
+
+    margin-top: 6em;
+    margin-left: 4em;
+}
+
+
+section:nth-of-type(2) img {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+section:nth-of-type(2) p {
+    margin-left: 2em;
+}
+
+
+
+section:nth-of-type(3) img {
+
+    margin-left: 4em;
+}
+
+section:nth-of-type(3) p {
+
+    margin-left: 4em;
+    margin-right: 2em;
+
+}
+
+section:nth-of-type(4) img {
+    margin-left: 2em;
+    margin-right: 2em;
+
+}
+
+section:nth-of-type(4) p {
+    margin-left: 2em;
+    margin-bottom: 2em;
+
+}
